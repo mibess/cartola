@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Chaveamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+        }
+        .topo{            
+            background-color: rgb(245, 150, 8);
+            text-align: center;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            font-size: 30px;
+            width: 100%;
+            height: 40px;
+            padding-top: 3px;
+        }
+        .bracket {
+            display: flex;
+            justify-content: space-around;
+            align-items:right;
+            width: 100%;
+            
+        }
+
+        .round {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+
+        .matchup {
+            font-size: x-small;
+            margin: 1px;
+            padding: 10px;
+            text-align: center;
+            width: 50%;
+            background-color: rgb(241, 118, 18);
+        }
+        .tabelaSulamericana {
+            background-color: #ec710d;
+            width: 50%;
+            height: 220px;
+            margin-top: 3px;
+        }
+        .tabelaSulamericana1{
+            width: 630px;
+            height: 546px;
+            margin-top: 3px;            
+        }
+        .jogo1 {
+           align-content: center;
+        }
+        .pontos{
+            font-size:x-small;
+            width: 5px;
+            height: 10px;
+            margin: 1px;
+            text-align: center;
+            
+        }
+        .fase2{
+            font-size: x-small;
+            position: fixed;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="topo">
+     <span class="pontos" title="Grupo L"><a href="copa_sula_americanaL.html">Grupo L</a></span>
+     <span class="pontos" title="Grupo A"><a href="copa_sula_americanaA.html">INÍCIO</a></span>
+     Copa Sul-Americana Grupo M
+     <span class="pontos" title="32 Avos"><a href="copa_sula_americana32.html">32 Avos</a></span>     
+    </div>   
+       <!-- Grupos --> 
+    <div class="bracket">
+                       
+        <iframe class="tabelaSulamericana" src="grupoM-Sulamericana.html";>
+        </iframe>
+            
+    <!--Partidas dos Grupos-->       
+        <iframe class="tabelaSulamericana1" src="rodada1GrupoM.html";>
+        </iframe> 
+                 
+    </div>
+    <div class="fase2">            
+            <img src="img/quadradoVerde.png" alt="Campeonatos" width="15" height="15">&nbsp;&nbsp;&nbsp;&nbsp;Classificado 16 Avos Mata-Mata
+        </div>
+</body>
+</html>

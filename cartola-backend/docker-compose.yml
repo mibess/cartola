@@ -1,0 +1,15 @@
+networks:
+  cartola-network:
+    driver: bridge
+
+services:
+  cartola-postgres:
+    image: postgres:15.5
+    environment:
+      POSTGRES_DB: '${DB_NAME}'
+      POSTGRES_USER: '${DB_USER}'
+      POSTGRES_PASSWORD: '${DB_PASSWORD}'
+    ports:
+      - 54324:5432
+    networks:
+      - cartola-network

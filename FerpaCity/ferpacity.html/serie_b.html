@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/cssGrid.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>Série B</title>
+        <style>
+            .tabela-brasileirao{
+                font-size: 8px;
+                margin-top: 0px;
+                margin-left: 5px;
+                text-align: center;               
+            }            
+           .topo{
+            background-color: rgb(250, 246, 7);
+            text-align: center;
+            width: 100%;
+            height: 35px;
+            }
+            
+            .borda-cinza{
+                height: 15px;
+            }            
+            .borda-vermelha{
+                height: 15px;
+            }
+            .escudo-time{
+                width:14%;
+                height: 10px;
+            }
+            .nome-time{
+                font-size: 9px;
+                text-align: left;
+                width: 60%;
+                height: 10px;
+            }
+            .pontos2{
+                font-size: 10px;
+                width: 9%;
+                height: 10px;
+                text-align: center;
+            }
+            .pontos{
+                font-size: 10px;
+                width: 9%;
+                height: 10px;
+                text-align: center;
+            }
+            .coluna-ultimas-cinco img{
+                width: 9%;
+                height: 8px;
+            }
+        </style>
+    </head>
+<body>
+    <div class="topo">Série B</div>
+    <table class="tabela-brasileirao" id="rankingTable">
+            <thead>
+                <tr class="pontos" id="tabela">
+                    <th class="pontos">Posição</th>
+                    <th>Logo</th>
+                    <th class="nome-time">Time</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>SP</th>
+                    <th class="nome-time">Últ/4</th>
+                    <th>F.FC</th>
+                    <th> MD/LB/SA/CB</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="borda-azul"></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/4vPwq2Z2Jqjx4cLahBY6S5rXhlg=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_222/escudo/c3/28/24/002f3b1a7f-18ae-4662-80b9-6dd5d7bc78c320240320172824" alt="Escudo o time MARCELO" title="Time Sc gimenez" loading="lazy"></td>
+                    <td class="nome-time">Sc Gimenez</td>
+                    <td>75</td>
+                    <td>38</td>
+                    <td>25</td>
+                    <td>0</td>
+                    <td>13</td>
+                    <td>191,76</td>
+                    <td class="coluna-ultimas-cinco">
+                       <img src="img/vitoria.svg" alt="vitória">
+                       <img src="img/vitoria.svg" alt="vitória">
+                       <img src="img/empate.svg" alt="empate">
+                       <img src="img/vitoria.svg" alt="vitória">
+                    </td> 
+                    <td>11º</td>            
+                    <td class="coluna-ultimas-cinco text-success">
+                           ----------
+                    </td>
+                    <td class="tabela-colunas-bordas"></td>            
+                    
+                </tr>
+                <tr>
+                    <td class="borda-azul"></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/z_V6rocM2uAk3pTjW8Dfiln40B4=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_222/escudo/d9/31/34/00c54bfbc2-b632-41b5-949c-44abb8fbf4d920240315213134" alt="Escudo o time Valter Armelin" title="Time Casarão26" loading="lazy"></td>
+                    <td class="nome-time">Casarão26</td>
+                    <td>75</td>
+                    <td>38</td>
+                    <td>25</td>
+                    <td>0</td>
+                    <td>13</td>
+                    <td>284,09</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <td>1º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            4º Libertadores
+                        </td>             
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+                <tr>
+                    <td class="borda-azul"></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/EKBjfc7vG_VAQm7dlf4a2fgqwIg=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_222/escudo/ba/59/23/00e130b278-9c35-440a-8d88-e6d4a0a296ba20240318155923" alt="Escudo o time Leandro junio" title="Time BAYER DE FERPA F.C" loading="lazy"></td>
+                    <td class="nome-time">Bayer de Ferpa F.C</td>
+                    <td>75</td>
+                    <td>38</td>
+                    <td>25</td>
+                    <td>0</td>
+                    <td>13</td>
+                    <td>235,59</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <td>22º</td>            
+                    <td class="coluna-ultimas-cinco">
+                    ----------
+                    </td>
+                    </td>             
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/I9vwtvfvz-yFnggDFbDxtlBfqRw=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_223/escudo/73/19/18/008c1e0ab1-6779-4163-bbc5-02d7de937a7320240326111918" alt="Escudo o time Agnaldo" title="Time Guina Freitas FC" loading="lazy"></td>
+                    <td class="nome-time">Guina Freitas FC</td>
+                    <td>66</td>
+                    <td>38</td>
+                    <td>22</td>
+                    <td>0</td>
+                    <td>16</td>
+                    <td>64,74</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        
+                        <td>13º</td>            
+                    <td class="coluna-ultimas-cinco text-success">
+                            ----------                   
+                            </td>
+                        </td> 
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+                <tr>
+                    <td class="borda-azul"></td> 
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/g-1ckrpNwPCyCUuGCT3RMNmh7YI=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_223/escudo/21/51/43/00a12a6785-6844-4d73-908c-6e8c12002a2120240328215143" alt="Escudo o time Luiz Silveira Junior" title="Time FÊFA NORUSCA " loading="lazy"></td>
+                    <td class="nome-time">FÊFA NORUSCA</td>
+                    <td>78</td>
+                    <td>38</td>
+                    <td>26</td>
+                    <td>0</td>
+                    <td>12</td>
+                    <td>357,59</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/vitoria.svg" alt="vitoria">
+                        <td>28º</td>            
+                    <td class="coluna-ultimas-cinco">
+                           ----------
+                            </td>
+                        </td>            
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/pUX7HbUWUf7ZWDp1uZHF-6SnZRc=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_222/escudo/91/19/00/00182a7ff0-f6da-4113-99fa-3253ac80cc9120240314211900" alt="Escudo o time Rafael" title="Time Palmeiras F.C.Rafael " loading="lazy"></td>
+                    <td class="nome-time">Palmeiras F.C.Rafael</td>
+                    <td>51</td>
+                    <td>38</td>
+                    <td>17</td>
+                    <td>0</td>
+                    <td>21</td>
+                    <td>5,59</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <td>23º</td>            
+                    <td class="coluna-ultimas-cinco text-success">                
+                            ----------
+                            </td>                    
+                        </td> 
+                    <td class="tabela-colunas-bordas"></td>
+                  </tr>
+                  <tr>
+                    <td></td> 
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/SEqoeHBMyzypyI7VKUsCMlcybyk=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_222/escudo/ec/45/34/0070869caa-3269-49cb-a514-bcc7726b2cec20240320214534" alt="Escudo o time welison tozatti" title="Time Barcelona do canastra " loading="lazy"></td>
+                    <td class="nome-time">Barcelona do Canastra</td>
+                    <td>72</td>
+                    <td>38</td>
+                    <td>24</td>
+                    <td>0</td>
+                    <td>14</td>
+                    <td>199,41</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/vitoria.svg" alt="vitoria">
+                        <td>5º</td>            
+                    <td class="coluna-ultimas-cinco text-success">
+                            ----------
+                            </td>
+                        </td> 
+                   <td class="tabela-colunas-bordas"></td>
+                </tr>
+                <tr>
+                    <td></td> 
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/JJDxhCfSdNVc5hSBC3SB7Ch0T7U=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_177/escudo/26/00/42/00caf8b17b-6e8f-4247-9e5f-d3d7e28eb92620200818100042" alt="Escudo o time Leandro Sgamato" title="Time Sgamato" loading="lazy"></td>
+                    <td class="nome-time">Sgamato</td>
+                    <td>63</td>
+                    <td>38</td>
+                    <td>21</td>
+                    <td>0</td>
+                    <td>17</td>
+                    <td>-14,22</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">                
+                        <img src="img/derrota.svg" alt="derrota">
+                        <td>41º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            ----------
+                            </td>
+                        </td> 
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+                <tr>
+                    <td class="borda-vermelho"></td> 
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/Q3DNa1pKjtiDqCOGeiAmJl9k0Sw=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_223/escudo/da/23/09/00e15f6158-4f16-438a-bf78-fb7ed672f7da20240328092309" alt="Escudo o time Orivaldo Rodrigues" title="Time Jesus Metal" loading="lazy"></td>
+                    <td class="nome-time">Jesus Metal</td>
+                    <td>48</td>
+                    <td>38</td>
+                    <td>16</td>
+                    <td>0</td>
+                    <td>22</td>
+                    <td>-84,71</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitoria">
+                        <img src="img/derrota.svg" alt="derrota">
+                        
+                        <td>53º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            ----------
+                            </td>
+                        </td> 
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/2zTEQZp1vRkMOVQZC7uHwBj4dxU=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_173/escudo/d4/16/46/00e3d05b80-fa76-4927-aa4f-ee84b2c78cd420200809201646" alt="Escudo o time Fábio Ruiz" title="Time Ruiz Futebol Club" loading="lazy"></td>
+                    <td class="nome-time">Ruiz Futebol Club</td>
+                    <td>54</td>
+                    <td>38</td>
+                    <td>18</td>
+                    <td>0</td>
+                    <td>20</td>
+                    <td>75,44</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <td>28º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            ----------
+                            </td> 
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/746Gzn14kL9qywBRBMFBN46YTW0=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_222/escudo/6b/14/41/005b95bfd8-1718-470a-8bb9-d7649534936b20240320191441" alt="Escudo o time JOAO RICARDO " title="Time piruca 77 FC " loading="lazy"></td>
+                    <td class="nome-time">Piruca 77 FC</td>
+                    <td>69</td>
+                    <td>38</td>
+                    <td>23</td>
+                    <td>0</td>
+                    <td>15</td>
+                    <td>184,96</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <td>35º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            ----------
+                            </td>
+                        </td> 
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+                <tr> 
+                    <td></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/m-uOVn3DsbIk9NNNSf5wx5pMQfc=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_181/escudo/9c/54/06/00df3fd9e4-61c9-4914-aa31-69146ec6719c20201109075406" alt="Escudo o time ELIELSON" title="Time CARABINA F.C.mito" loading="lazy"></td>
+                    <td class="nome-time">CARABINAF.C.mito</td>
+                    <td>51</td>
+                    <td>38</td>
+                    <td>17</td>
+                    <td>0</td>
+                    <td>21</td>
+                    <td>-31,47</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <td>36º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            ----------
+                            </td>
+                        </td> 
+                        <td class="tabelas-colunas-bordas"></td>
+                </tr>        
+                <tr> 
+                    <td></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/wPVAguOsRWBOaaKZvcGkSi31Xvk=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_222/escudo/5f/32/02/005164444e-4be5-47ee-ad1b-bc576648a55f20240320173202" alt="Escudo o time ADJUNIOR" title="Time TEN BATERIAS" loading="lazy"></td>
+                    <td class="nome-time">TEN BATERIAS</td>
+                    <td>54</td>
+                    <td>38</td>
+                    <td>18</td>
+                    <td>0</td>
+                    <td>20</td>
+                    <td>34,26</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <td>55º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            ----------
+                            </td>
+                        </td> 
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+        
+                <tr>
+                    <td class="borda-azul"></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/IXZmo2RJk1bRgedut0reN1jd3m8=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_202/escudo/24/55/25/00b4d109b1-11e5-4285-936e-bf38a44e9c2420220403155525" alt="Escudo o time Edson Cordeiro" title="Time ecord fc" loading="lazy"></td>
+                    <td class="nome-time">ecord fc</td>
+                    <td>75</td>
+                    <td>38</td>
+                    <td>25</td>
+                    <td>0</td>
+                    <td>13</td>
+                    <td>170,53</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <td>32º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            ----------
+                            </td>
+                        </td> 
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>        
+                <tr>
+                    <td class="borda-vermelho"></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/TmBoOt6vJHKjHY8q1p7etVbeCqQ=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_222/escudo/1c/46/51/00f59e068e-10e0-41be-995e-757459c7351c20240314204651" alt="Escudo o time Gilson Moreira" title="Time CR GILSON FC" loading="lazy"></td>
+                    <td class="nome-time">CR GILSON FC</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00,00</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <td>48º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            ----------
+                            </td>
+                        </td> 
+                   <td class="tabela-colunas-bordas"></td>
+                </tr>
+                   <tr>
+                    <td></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/j68WPXdkwbDz928pSuI9PUYAZaI=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_223/escudo/c8/22/58/002b987098-2252-41c6-9f0a-e9de33086bc820240322092258" alt="Escudo o time Isidoro " title="Time Sãopalmerintias FC" loading="lazy"></td>
+                    <td class="nome-time">Sãopalmerinthias FC</td>
+                    <td>60</td>
+                    <td>38</td>
+                    <td>20</td>
+                    <td>0</td>
+                    <td>18</td>
+                    <td>-109,55</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/vitoria.svg" alt="vitoria">
+                        <td>62º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            ----------
+                            </td>
+                        </td> 
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+                <tr>
+                    <td class="borda-vermelho"></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/ZApTobCFn5T-JWOYNE1Iu2IkO0Y=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_223/escudo/bc/45/51/00e0e64848-417f-4c5e-a006-abafc7451ebc20240326134551" alt="Escudo o time Edinho Faria" title="Time Vamos Subir Santos F C" loading="lazy"></td>
+                    <td class="nome-time">Vamos S.Santos FC</td>
+                    <td>48</td>
+                    <td>38</td>
+                    <td>16</td>
+                    <td>00</td>
+                    <td>22</td>
+                    <td>-84,71</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <td>31º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            ----------
+                            </td>
+                        </td> 
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+        
+                <tr>
+                    <td></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/j-hKuiUVBI7ZD-HoDVGY2K4qGlg=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_223/escudo/ad/27/37/00e435a42e-5958-4e91-9976-8553adf263ad20240328102737" alt="Escudo o time Tavin Peroco" title="Time Legião do Raio F.C" loading="lazy"></td>
+                    <td class="nome-time">Legião do Raio F.C</td>
+                    <td>51</td>
+                    <td>38</td>
+                    <td>17</td>
+                    <td>00</td>
+                    <td>21</td>
+                    <td>-131,34</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <img src="img/derrota.svg" alt="derrota">
+                        <td>61º</td>            
+                    <td class="coluna-ultimas-cinco">
+                            ----------
+                            </td>
+                        </td> 
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+                <tr>
+                    <td class="borda-vermelho"></td>
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/C9Kl3K89d-h266somNnKOPDyW7o=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_222/escudo/e3/57/34/0051f99ee7-effb-49ec-96d9-0c178cec8ee320240320225734" alt="Escudo o time lucas maraba" title="Time FTMARABA FC" loading="lazy"></td>
+                    <td class="nome-time">FTMARABA FC</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>30</td>
+                    <td>-600,06</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <td>18º</td>            
+                        <td class="coluna-ultimas-cinco">
+                           ----------
+                        </td>
+                    </td>             
+                    <td class="tabela-colunas-bordas"></td>
+                </tr>
+                    <td class="borda-vermelho"></td>                      
+                    <td><img class="escudo-time escudo-com-foto__escudo" src="https://s2-cartola.glbimg.com/soG1FOSFtADASiKWPXQOVOh13Vk=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_222/escudo/04/34/37/0013314821-e9f7-498e-a066-8514b72b360420240320003437" alt="Escudo o time Luiz Rogerio " title="Time Jubreik FC" loading="lazy"></td>
+                    <td class="nome-time">Jubreik FC</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00,00,13</td>
+                    <td class="coluna-ultimas-cinco">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/vitoria.svg" alt="vitória">
+                        <img src="img/derrota.svg" alt="derrota">
+                      </td>
+                    <td>6º</td>                   
+                    </td><td class="coluna-ultimas-cinco">
+                           ----------
+                            </td>
+                        <td class="tabela-colunas-bordas"></td>
+                </tr>                                   
+                                
+                          
+            </table>
+                 
+        </tbody> 
+        
+        <script>
+            function sortTable() {
+                const table = document.getElementById("rankingTable");
+                const rows = Array.from(table.rows).slice(1); // Ignora o cabeçalho
+        
+                rows.sort((a, b) => {
+                    const pointsA = parseInt(a.cells[3].innerText);
+                    const pointsB = parseInt(b.cells[3].innerText);
+                    const tieBreakerA = parseInt(a.cells[8].innerText);
+                    const tieBreakerB = parseInt(b.cells[8].innerText);
+        
+                    if (pointsA === pointsB) {
+                        return tieBreakerB - tieBreakerA; // Critério de desempate
+                    }
+                    return pointsB - pointsA; // Ordem decrescente
+                });
+        
+                rows.forEach((row, index) => {
+                    row.cells[0].innerText = index + 1; // Atualiza a posição
+                    table.tBodies[0].appendChild(row);
+                });
+            }
+        
+            window.onload = sortTable;
+        </script>
+        
+</div>
+     </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

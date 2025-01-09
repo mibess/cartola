@@ -1,0 +1,108 @@
+Sent by Copilot:
+Para criar uma tabela de campeonato com jogos das equipes e atualização automática em JavaScript, você pode seguir os passos abaixo. Vou te dar um exemplo básico para começar:
+
+Estrutura HTML: Crie uma estrutura básica para a tabela no seu arquivo HTML.
+HTML
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/cssGrid.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Tabela de Campeonato</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Campeonato</h1>
+    <table id="tabela-campeonato">
+        <thead>
+            <tr>
+                <th>Equipe</th>
+                <th>Jogos</th>
+                <th>Vitórias</th>
+                <th>Empates</th>
+                <th>Derrotas</th>
+                <th>Pontos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linhas das equipes serão inseridas aqui -->
+        </tbody>
+    </table>
+    <script src="script.js">
+
+const equipes = [
+    { nome: 'EC Maceda', jogos: 0, vitorias: 0, empates: 0, derrotas: 0, pontos: 0 },
+    { nome: 'Ferpacity26', jogos: 0, vitorias: 0, empates: 0, derrotas: 0, pontos: 0 },
+    // Adicione mais equipes conforme necessário
+];
+
+function atualizarTabela() {
+    const tbody = document.querySelector('#tabela-campeonato tbody');
+    tbody.innerHTML = ''; // Limpa a tabela antes de atualizar  
+
+    equipes.forEach(equipe => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${equipe.nome}</td>
+            <td>${equipe.jogos}</td>
+            <td>${equipe.vitorias}</td>
+            <td>${equipe.empates}</td>
+            <td>${equipe.derrotas}</td>
+            <td>${equipe.pontos}</td>
+        `;
+        tbody.appendChild(row);
+    });
+}
+
+function registrarJogo(equipe1, equipe2, resultado) {
+    const equipeA = equipes.find(e => e.nome === equipe1);
+    const equipeB = equipes.find(e => e.nome === equipe2);
+
+    if (!equipeA || !equipeB) return;
+
+    equipeA.jogos++;
+    equipeB.jogos++;
+
+    if (resultado === 'vitoriaA') {
+        equipeA.vitorias++;
+        equipeA.pontos += 3;
+        equipeB.derrotas++;
+    } else if (resultado === 'vitoriaB') {
+        equipeB.vitorias++;
+        equipeB.pontos += 3;
+        equipeA.derrotas++;
+    } else if (resultado === 'empate') {
+        equipeA.empates++;
+        equipeB.empates++;
+        equipeA.pontos++;
+        equipeB.pontos++;
+    }
+
+    atualizarTabela();
+}
+
+// Exemplo de uso
+atualizarTabela();
+registrarJogo('Equipe A', 'Equipe B', 'vitoriaA');
+registrarJogo('Equipe A', 'Equipe B', 'empate');
+
+    </script>
+</body>
+</html>
+
+

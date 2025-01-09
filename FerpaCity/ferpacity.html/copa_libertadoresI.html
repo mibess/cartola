@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Chaveamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+        }
+        .topo{            
+            background-color: rgb(59, 8, 245);
+            color: aliceblue;
+            text-align: center;
+            font-size: 40px;
+            width: 100%;
+            height: 50px;
+        }
+        .bracket {
+            display: flex;
+            justify-content: space-around;
+            align-items:right;
+            width: 100%;
+            
+        }
+
+        .round {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+
+        .matchup {
+            font-size: x-small;
+            margin: 1px;
+            padding: 10px;
+            text-align: center;
+            width: 50%;
+            background-color: rgb(241, 118, 18);
+        }
+        .tabelaLibertadores {
+            background-color: #ec710d;
+            width: 50%;
+            height: 220px;
+            margin-top: 3px;
+        }
+        .tabelaLibertadores1{
+            width: 630px;
+            height: 546px;
+            margin-top: 3px;            
+        }
+        .jogo1 {
+           align-content: center;
+        }
+        .pontos{
+            font-size:x-small;
+            width: 5px;
+            height: 10px;
+            margin: 1px;
+            text-align: center;            
+        }
+        .fase2{
+            font-size: x-small;
+            position: fixed;
+        }
+       
+    </style>
+</head>
+    <body>
+        <div class="topo">Copa Libertadores 2024</div>
+        <div class="topo">
+        <span class="pontos" title="Grupo H"><a href="copa_libertadoresH.html">Grupo H</a></span>
+        <span class="pontos" title="Ferpacity"><a href="ferpacity.html">INÍCIO</a></span>            
+        Copa Libertadores Grupo I
+        <span class="pontos"  title="Grupo J"><a href="copa_libertadoresJ.html">Grupo J</a></span>            
+        </div>
+
+
+        <!-- Grupos --> 
+        <div class="bracket">
+            <iframe class="tabelaLibertadores" src="grupoI-libertadores.html";>
+            </iframe>           
+            <!--Partidas dos Grupos-->       
+            <iframe class="tabelaLibertadores1" src="rodada1libertadoresI.html";>
+            </iframe>                 
+        </div>
+        <div class="fase2">            
+            <img src="img/quadradoVerde.png" alt="Campeonatos" width="15" height="15">&nbsp;&nbsp;&nbsp;&nbsp;Classificado 32 Avos Mata-Mata
+        </div>
+
+    </body>
+</html>

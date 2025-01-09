@@ -1,0 +1,6 @@
+@for (equipe of equipes; track equipe.id) {
+  <div class="lista">
+    <img [src]="equipe.escudo" alt="Escudo" width="20" height="20"/>
+    <span>{{ equipe.nome }}</span>
+  </div>
+}
